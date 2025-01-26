@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Main from '../components/Main'
 import TranslitPage from '../views/TranslitPage.vue'
 import ToDo from '../components/ToDo.vue'
+import LoginForm from '../components/LoginForm.vue'
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ let router = new VueRouter({
       path: '/todo',
       name: 'ToDo',
       component: ToDo,
+    },
+    {
+      path: '/login',
+      name: 'LoginForm',
+      component: LoginForm,
     }
   ]
 });
