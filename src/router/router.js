@@ -5,7 +5,8 @@ import Main from '../components/Main'
 import TranslitPage from '../views/TranslitPage.vue'
 import ToDo from '../components/ToDo.vue'
 import LoginForm from '../components/LoginForm.vue'
-import ParentApp from '../components/ParentApp.vue';
+import ParentApp from '../components/ParentApp.vue'
+import ModalApp from '../components/ModalApp.vue'
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,11 @@ let router = new VueRouter({
       path: '/parent',
       name: 'Parent',
       component: ParentApp
+    },
+    {
+      path: '/modal',
+      name: 'Modal',
+      component: ModalApp
     }
   ]
 });
