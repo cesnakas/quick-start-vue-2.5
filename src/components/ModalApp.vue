@@ -8,10 +8,10 @@
 
       <v-card>
         <v-card-title>
-          <span class="headline">Модальное окно</span>
+          <slot name="title" class="headline">Модальное окно</slot>
         </v-card-title>
         <v-card-text>
-          <slot>Произвольный контент</slot>
+          <slot name="text">Произвольный контент</slot>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>

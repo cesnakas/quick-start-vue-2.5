@@ -3,7 +3,7 @@
 
     <v-row>
       <v-col cols="12" md="10">
-        <v-text-field v-model="todo" @click="addTodo" outlined label="Введите название задачи" />
+        <v-text-field v-model="todo" outlined label="Введите название задачи" />
       </v-col>
       <v-col cols="12" md="2">
         <v-btn x-large @click="addTodo">Добавить</v-btn>

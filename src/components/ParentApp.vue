@@ -2,9 +2,10 @@
   <v-container>
     <ChildApp class="mt-16" @send="handleEvent"/>
 
-    <!--<ModalApp>
-      <p>Text Test</p>
-    </ModalApp>-->
+    <ModalApp>
+      <template v-slot:title>Text Test</template>
+      <template v-slot:text>CONTENT</template>
+    </ModalApp>
   </v-container>
 </template>
 
